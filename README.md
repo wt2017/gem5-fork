@@ -1,3 +1,8 @@
+# Commands to run
+Create container: docker run -it --rm   --name gem5   -u $UID:$GID   -v /etc/passwd:/etc/passwd:ro   -v /etc/group:/etc/group:ro   -v /home/uuwyou/projects/gem5-fork:/gem5   ghcr.io/gem5/ubuntu-22.04_all-dependencies:v23-0
+Build gem5: scons build/X86/gem5.debug -j 8 --ignore-style
+
+
 # The gem5 Simulator
 
 This is the repository for the gem5 simulator. It contains the full source code
