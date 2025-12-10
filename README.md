@@ -1,6 +1,9 @@
 # Commands to run
 Create container: docker run -it --rm   --name gem5   -u $UID:$GID   -v /etc/passwd:/etc/passwd:ro   -v /etc/group:/etc/group:ro   -v /home/uuwyou/projects/gem5-fork:/gem5   ghcr.io/gem5/ubuntu-22.04_all-dependencies:v23-0
+
 Build gem5: scons build/X86/gem5.debug -j 8 --ignore-style
+
+Run 1st case: cd gem5 && ./build/X86/gem5.debug configs/learning_gem5/part1/simple.py
 
 
 # The gem5 Simulator
